@@ -5,9 +5,11 @@
 //a = 2 b = 10 -> max = 10
 //a = -9 b = -3 -> max = -3
 
+// int columns = Math.Abs(int.Parse(Console.ReadLine() ?? string.Empty));
+
 Console.Write("Введите два числа: ");
-int number1 = int.Parse(Console.ReadLine());
-int number2 = int.Parse(Console.ReadLine());
+int number1 = Math.Abs(int.Parse(Console.ReadLine() ?? string.Empty));
+int number2 = Math.Abs(int.Parse(Console.ReadLine() ?? string.Empty));
 if(number1 > number2)
 {
 Console.WriteLine($"Число {number1} больше числа {number2}");
